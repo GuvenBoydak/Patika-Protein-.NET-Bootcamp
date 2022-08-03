@@ -4,8 +4,8 @@ using Microsoft.Extensions.Caching.Memory;
 namespace JwtHomework.Base
 {
     public interface IInMemoryCacheService<T> where T : BaseEntity
-    {  
-            object Get(string cacheKey, object entity);
+    {   
+            object Get(string cacheKey, object entity); 
 
             void Set(string cacheKey, object entity, MemoryCacheEntryOptions options);
 

@@ -44,6 +44,7 @@ namespace JwtHomework.Business
 
         public async Task<List<Person>> GetPaginationAsync(int page, int limit,string cacheKey)
         {
+
             //Cache data varmı kontrol ediyoruz ve out ile List<Person> tipinde people degişkeni yaratıyoruz.
             bool cachedData = _cacheService.TryGetValue(cacheKey, out List<Person> people);
 
@@ -66,7 +67,6 @@ namespace JwtHomework.Business
                 return people;
             }         
             return people;
-
         }
 
         public async Task InsertAsync(Person entity)

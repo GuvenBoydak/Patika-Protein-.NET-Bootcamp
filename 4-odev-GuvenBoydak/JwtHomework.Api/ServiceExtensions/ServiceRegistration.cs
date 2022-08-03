@@ -22,7 +22,7 @@ namespace JwtHomework.Api
             });
             services.AddSingleton(mapperConfig.CreateMapper());
 
-            // memoryCashe
+            //memoryCache
             services.AddMemoryCache();
 
             services.AddScoped(typeof(IInMemoryCacheService<>), typeof(InMemoryCacheService<>));

@@ -17,8 +17,6 @@ namespace JwtHomework.EmailService
             MailMessage mail = new MailMessage("denememailservice@gmail.com", account.Email);
             mail.Subject = "Bilgilendirme.";
             mail.Body = $"Kulanıcı Başarıyla Kayıt olmuştur. \n \n Kullanıcı UserName : {account.UserName} \n  Kullanıcı İsmi : {account.Name} ";
-
-
             
             try
             {
